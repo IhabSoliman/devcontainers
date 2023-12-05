@@ -1,6 +1,6 @@
-# 
+#
 #  Copy from https://github.com/gengxin/devcontainers_templates/blob/main/test/test-utils/test-utils.sh
-# 
+#
 #!/bin/bash
 USERNAME=${1:-vscode}
 
@@ -19,7 +19,7 @@ check() {
     LABEL=$1
     shift
     echo -e "\n🧪 Testing $LABEL"
-    if "$@"; then 
+    if "$@"; then
         echo "✅  Passed!"
         return 0
     else
@@ -53,7 +53,7 @@ checkOSPackages() {
     LABEL=$1
     shift
     echo -e "\n🧪 Testing $LABEL"
-    if dpkg-query --show -f='${Package}: ${Version}\n' "$@"; then 
+    if dpkg-query --show -f='${Package}: ${Version}\n' "$@"; then
         echo "✅  Passed!"
         return 0
     else
@@ -104,7 +104,7 @@ reportResults() {
     if [ ${#FAILED[@]} -ne 0 ]; then
         echoStderr -e "\n💥  Failed tests: ${FAILED[@]}"
         exit 1
-    else 
+    else
         echo -e "\n💯  All passed!"
         exit 0
     fi

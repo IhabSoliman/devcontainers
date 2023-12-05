@@ -101,4 +101,3 @@ ARG TARGETPLATFORM
 RUN if [ "${TARGETPLATFORM}" != "linux/s390x" ]; then echo "y" | bit complete; fi
 
 COPY --from=gh /bin /usr/local/bin/gh
-
