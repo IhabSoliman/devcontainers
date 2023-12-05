@@ -1,0 +1,19 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:20-bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers-contrib/features/act:1": {},
+		"ghcr.io/devcontainers-contrib/features/actionlint:1": {}
+	},
+	"postCreateCommand": "npm install -g @devcontainers/cli",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mads-hartmann.bash-ide-vscode",
+				"dbaeumer.vscode-eslint",
+				"editorconfig.editorconfig",
+				"github.vscode-github-actions"
+			]
+		}
+	}
+}
