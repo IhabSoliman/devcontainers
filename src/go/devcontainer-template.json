@@ -18,12 +18,12 @@
       },
       "osVariant" : {
         "type": "string",
-        "description": "Debian version:",
+        "description": "OS variant",
         "proposals": [
-            "bookworm",
-            "bullseye"
+            "debian",
+            "alpine"
         ],
-        "default": "bookworm"
+        "default": "debian"
       }
   },
   "platforms": [
