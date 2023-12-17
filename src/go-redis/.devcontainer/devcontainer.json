@@ -1,0 +1,48 @@
+{
+	"name": "Go + Redis",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "vscode",
+  "runServices": [
+    "vscode",
+    "redis"
+  ],
+	"workspaceFolder": "/workspace",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"username": "vscode",
+			"userUid": "1000",
+			"userGid": "1000",
+			"upgradePackages": "true"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "none"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest",
+			"ppa": "false"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.go",
+				"ms-azuretools.vscode-docker",
+				"ms-vscode-remote.vscode-remote-extensionpack",
+				"ms-vscode.makefile-tools",
+				"oliversturm.fix-json",
+				"nextfaze.json-parse-stringify",
+				"eamodio.gitlens",
+				"EditorConfig.EditorConfig",
+				"github.vscode-github-actions"
+			],
+			"settings": {
+				"files.eol": "\n",
+				"remote.extensionKind": {
+					"ms-azuretools.vscode-docker": "workspace"
+				}
+			}
+		}
+	}
+}
