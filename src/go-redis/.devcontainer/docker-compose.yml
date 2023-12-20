@@ -18,9 +18,8 @@ services:
       - ~/.gitconfig:/root/.gitconfig
     environment:
       - TZ=
-      - REDIS_HOST=cache
+      - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - REDIS_PASSWORD=p@ssW0rd
     cap_add:
       # For debugging with dlv
       - SYS_PTRACE
@@ -31,7 +30,7 @@ services:
 
   redis:
     image: redis:latest
-    command: redis-server --save 20 1 --loglevel warning --requirepass p@ssW0rd
+    command: redis-server --save 20 1 --loglevel warning
     volumes:
       - redis-data:/data
     ports:

@@ -10,7 +10,8 @@ checkCommon
 checkExtension "golang.Go"
 
 # Image specific tests
-check "go" go version
+check "lib pq check" go list github.com/redis/go-redis/v9
+check "go test program" go run test.go
 
 # Report result
 reportResults
