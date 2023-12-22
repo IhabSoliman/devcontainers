@@ -1,0 +1,12 @@
+{
+  "id": "go+redis",
+  "version": "1.0.0",
+  "name": "Go + Redis",
+  "description": "Develop Go based applications with Redis. Includes appropriate runtime args, Go, common tools, extensions, and dependencies.",
+  "documentationURL": "https://github.com/ihabsoliman/devcontainers/tree/main/src/go-redis",
+  "publisher": "Ihab Soliman",
+  "licenseURL": "https://github.com/ihabsoliman/devcontainers/blob/main/LICENSE",
+  "platforms": [
+      "Go"
+  ]
+}
