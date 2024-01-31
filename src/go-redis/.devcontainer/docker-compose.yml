@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   vscode:
-    image: ghcr.io/ihabsoliman/godev:1.21-debian-v0.3.0
+    image: ghcr.io/ihabsoliman/godev:1.21-debian-v0.4.0
     volumes:
       - ../:/workspace
       # Docker socket to access Docker server

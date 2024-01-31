@@ -1,6 +1,6 @@
 {
 	"name": "Go",
-	"image": "ghcr.io/ihabsoliman/godev:${templateOption:goVariant}-${templateOption:osVariant}-v0.3.0",
+	"image": "ghcr.io/ihabsoliman/godev:${templateOption:goVariant}-${templateOption:osVariant}-v0.4.0",
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {
 			"username": "vscode",
