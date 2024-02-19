@@ -11,10 +11,10 @@
           "type": "string",
           "description": "Go version:",
           "proposals": [
-              "1.20",
-              "1.21"
+              "1.21",
+              "1.22"
           ],
-          "default": "1.21"
+          "default": "1.22"
       },
       "osVariant" : {
         "type": "string",
